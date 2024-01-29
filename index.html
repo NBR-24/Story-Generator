@@ -26,18 +26,30 @@
       }
 
       p {
-        background: #ffc125;
-        color: #5e2612;
+        background: #000000;
+        color: #ffffff;
         padding: 10px;
         visibility: hidden;
+        border-radius: 8px;
+        text-align: center;
+      }
+      .randomize{
+        background-color: #ffc125;
+        color:black;
+        width:100px;
+        height:40px;
+        border-style: solid;
+        border-color: #ffc125;
+        border-radius: 8px;
       }
     </style>
   </head>
 
   <body>
     <div>
-      <label for="customname">Enter custom name:</label>
-      <input id="customname" type="text" placeholder="" />
+        <h1>Silly Story Generator</h1>
+      <label for="customname">Enter custom name:</label><br><br>
+      <input id="customname" type="text" placeholder="Enter Custom Name" />
     </div>
     <div>
       <label for="us">US</label
@@ -48,7 +60,6 @@
     <div>
       <button class="randomize">Generate random story</button>
     </div>
-    <!-- Thanks a lot to Willy Aguirre for his help with the code for this assessment -->
     <p class="story"></p>
     <script src="main.js"></script>
   </body>
